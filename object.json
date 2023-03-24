@@ -1,0 +1,34 @@
+{
+    "name": "Mr. Crypto #1",
+    "description": "The official RACKS® NFT collection",
+    "image": "img/photo.png",
+    "dna": "e73c88b9a07700145f99579a96187fe65e973c14",
+    "edition": 1,
+    "date": 1641994044419,
+    "attributes": [
+        {
+            "trait_type": "Background",
+            "value": "Orange"
+        },
+        {
+            "trait_type": "Clothes",
+            "value": "Spacesuit Black"
+        },
+        {
+            "trait_type": "Type",
+            "value": "Mr. Skull"
+        },
+        {
+            "trait_type": "Headwear",
+            "value": "McHodler Red Cap"
+        },
+        {
+            "trait_type": "Eyes",
+            "value": "Hollow BTC"
+        },
+        {
+            "trait_type": "Moustache",
+            "value": "Cigar Simple"
+        }
+    ]
+}
