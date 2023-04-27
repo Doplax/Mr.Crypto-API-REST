@@ -12,6 +12,21 @@
     flex-direction: column;
 }
 
+#container {
+
+}
+
+
+#card-container {
+  background-color: grey;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+}
 body{
     display: flex;
     flex-direction: column;
@@ -27,17 +42,27 @@ p,th{
     margin-top: 20px;
 }
 
+
 .mosaic-container {
     width: 100vw;
     height: 100vh;
     background-image: url('/img/moustache.webp');
     background-size: 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
 .mosaic-effect {
     animation: move-diagonal 5s infinite linear;
   }
-  
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   @keyframes move-diagonal {
     0% {
       background-position: 0 0;

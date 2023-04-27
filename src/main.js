@@ -1,14 +1,9 @@
 function renderData(MrCrypto) {
-    
-
     const name = document.getElementById("name");
     name.innerText = MrCrypto.name;
 
     const img = document.getElementById("img-cotainer");
     img.src = MrCrypto.image;
-
-
-
 
     const dataContainer = document.getElementById("data-container");
     dataContainer.innerHTML = `
@@ -58,19 +53,28 @@ function renderData(MrCrypto) {
     
 }
 
-async function fetchData() {
+async function fetchData(mrCryptoNum) {
+    const url = `https://apinft.racksmafia.com/api/${mrCryptoNum}.json`
+    //let res = await fetch(url)
     let res = await fetch("./object.json")
-    //let res = await fetch("./object.json")
 
     let data = await res.json()
-    renderData(data);
+    return data
 }
 
+function handleSearchBar() {
+    const searchBar = document.querySelector('#searchBar');
+    const currentNumValue = searchBar.value;
+    fetchData(currentNumValue)
+        .then(data => renderData(data));
+}
+
+const searchButton = document.querySelector('#searchButton');
+searchButton.addEventListener('click', handleSearchBar);
 
 
 
-
-fetchData()
+window.onload = () => fetchData(0).then(data => renderData(data));
 
 
 

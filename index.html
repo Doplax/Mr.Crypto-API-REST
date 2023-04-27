@@ -6,23 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
 </head>
 <body class="mosaic-effect mosaic-container">
 
-    
-    
-    <!--<div data-tilt data-tilt-glare data-tilt-max-glare="0.5" id="content" class="box">-->
-    <p id="name">Mr crypto 1</p>
-    <div id="content" class="box">
-        <img id="img-cotainer">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid d-flex">
+          <div class="d-flex" role="search">
+            <input id="searchBar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="searchButton" class="btn btn-outline-success" type="submit">Search</button>
+          </div>
+        </div>
+      </nav>
+
+    <div id="container">
+        
+        <!--<div data-tilt data-tilt-glare data-tilt-max-glare="0.5" id="content" class="box">-->
+        
+        <div id="card-container">
+            <p id="name">Mr crypto 1</p>
+            <div id="content" class="box">
+                <img id="img-cotainer">
+            </div>
+            <div id="data-container">
+                <!-- Cargado con JS -->
+            </div>
+        </div>
     </div>
-    
-    <div id="data-container">
 
-    </div>
-
-
-    <footer>
+    <footer id="footer">
         <p></p>
     </footer>
 
