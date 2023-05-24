@@ -54,7 +54,7 @@ function renderData(MrCrypto) {
 }
 
 async function fetchData(mrCryptoNum) {
-    const url = `https://apinft.racksmafia.com/api/${mrCryptoNum}.json`
+    //const url = `https://apinft.racksmafia.com/api/${mrCryptoNum}.json`
     //let res = await fetch(url)
     let res = await fetch("./object.json")
 
